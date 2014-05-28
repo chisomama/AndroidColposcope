@@ -4,4 +4,7 @@
 	<string name="button_text">Click here</string>
 	<string name="user_display">lalalaa, more to come</string>
 	<string name="select_view">View Images</string>
+	<string name="welcome_p">Welcome to the GWHT Cervix Imager</string>
+	<string name="intro_words">Hello, thanks for using the GWHT Imager, If you are a first time user, 
+	    Please follow the instructions below to begin use. If not, skip ahead to the camera and have a good exam!</string>
 </resources>

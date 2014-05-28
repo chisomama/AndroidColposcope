@@ -214,8 +214,7 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
 	            	SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 	                String dateTime = sdf.format(Calendar.getInstance().getTime()); // reading local time in the system
 	                Canvas canvas = new Canvas(bmp);
-	            	canvas.drawBitmap(bmp, mx_canvas, null);
-	            	
+	
 	                  Paint tPaint = new Paint();
 	                  tPaint.setTextSize(35);
 	                  tPaint.setColor(Color.BLUE);
@@ -225,7 +224,7 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
 	                  canvas.drawText(dateTime, 20f, height+15f, tPaint);
 	            	try {
 	         	       FileOutputStream out = new FileOutputStream(filename);
-	         	       bmp.compress(Bitmap.CompressFormat.JPEG, 100, out);
+	         	       bmp.compress(Bitmap.CompressFormat.JPEG, 90, out);
 	         	       Toast.makeText(context,"Saved image: " + filename, Toast.LENGTH_SHORT).show();
 	         		} catch (Exception e) {
 	         		       e.printStackTrace();
